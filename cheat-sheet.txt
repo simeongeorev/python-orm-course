@@ -1,0 +1,55 @@
+POSTGRES USER 
+postgres-user
+
+POSTGRES PASSWORD
+password
+
+	- Create venv:
+	python -m venv .myenv
+
+	- activate the venv
+	.\.myenv\Scripts\activate
+
+	- install the project requirements
+	pip install -r requirements.txt
+
+- install Django
+pip install Django
+
+- start the Django app / run server
+python manage.py runserver
+
+- change the psycopg version in the requirements file to:
+psycopg2-binary>=2.9.12
+
+- migrate the changes
+python manage.py makemigrations
+
+- execute the migration
+python manage.py migrate
+
+- create a super user (admin)
+python manage.py createsuperuser
+
+- list the applied migrations: 
+python manage.py showmigrations -l
+
+- print the generated SQL code: 
+python manage.py sqlmigrate main_app 0001_initial
+
+- make empty migration
+python manage.py makemigrations main_app --name migrate_unique_brands --empty
+
+- go to a specific migration: 
+python manage.py migrate main_app 0001
+
+
+- manage python versions 
+pyenv versions
+pyenv local {version}
+pyenv global {version}
+pyenv install --list
+
+
+
+
