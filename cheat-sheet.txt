@@ -9,6 +9,9 @@ password
 
 	- activate the venv
 	.\.myenv\Scripts\activate
+	
+	- change the psycopg version in the requirements file to:
+	psycopg2-binary>=2.9.12
 
 	- install the project requirements
 	pip install -r requirements.txt
@@ -18,9 +21,6 @@ pip install Django
 
 - start the Django app / run server
 python manage.py runserver
-
-- change the psycopg version in the requirements file to:
-psycopg2-binary>=2.9.12
 
 - migrate the changes
 python manage.py makemigrations
