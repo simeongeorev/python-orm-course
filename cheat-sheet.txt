@@ -4,17 +4,23 @@ postgres-user
 POSTGRES PASSWORD
 password
 
-	- Create venv:
+	-1 Create venv:
 	python -m venv .myenv
 
-	- activate the venv
+	-2 activate the venv
 	.\.myenv\Scripts\activate
 	
-	- change the psycopg version in the requirements file to:
+	-3 change the psycopg version in the requirements file to:
 	psycopg2-binary>=2.9.12
 
-	- install the project requirements
+	-4 install the project requirements
 	pip install -r requirements.txt
+	
+	-5 create new DB connection to PostgreSQL
+	
+	-6 create new Database inside it
+	
+	-7 in the settings.py -> use the created Postgre DB and delete/comment the old sqlite3 setting
 
 - install Django
 pip install Django
@@ -51,5 +57,10 @@ pyenv global {version}
 pyenv install --list
 
 
+- install IPython if not included in the local env
+pip install ipython
+
+- run the django shell command:
+python manage.py shell
 
 
