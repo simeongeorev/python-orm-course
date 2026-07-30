@@ -533,4 +533,3 @@ class TimestampMixin(models.Model):
 	class Meta:
     	    abstract = True
 			
-C:\Users\simeon.georev\OneDrive - Scale Focus AD\repos\soft-uni-repos\python-orm-course\exercise_14_models_inheritence_and_customization\07-exercise-skeleton
